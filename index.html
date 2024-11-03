@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white font-bold text-xl">My Website</a>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
+          <li><a href="#" class="text-white hover:text-gray-200">About</a></li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-200">Services</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-200">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-96 text-white"
+      style="
+        background-image: url('https://source.unsplash.com/random/1600x900');
+      "
+    >
+      <div class="container mx-auto h-full flex items-center justify-center">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Welcome to My Website
+          </h1>
+          <p class="text-lg md:text-2xl">
+            Explore the possibilities with Tailwind CSS
+          </p>
+          <a
+            href="#"
+            class="mt-6 inline-block bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Grid Section -->
+    <section
+      class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6"
+    >
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-5">
+        <h2 class="text-xl font-bold mb-2">Card Title 1</h2>
+        <p class="text-gray-700">
+          This is an example of a card using Tailwind CSS. You can style it as
+          you like and customize it further.
+        </p>
+        <a href="#" class="text-blue-500 hover:underline mt-4 block"
+          >Learn more</a
+        >
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-lg p-5">
+        <h2 class="text-xl font-bold mb-2">Card Title 2</h2>
+        <p class="text-gray-700">
+          Another example of a card. Tailwind makes it easy to create responsive
+          layouts and design elements.
+        </p>
+        <a href="#" class="text-blue-500 hover:underline mt-4 block"
+          >Learn more</a
+        >
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-5">
+        <h2 class="text-xl font-bold mb-2">Card Title 3</h2>
+        <p class="text-gray-700">
+          Customize each card differently to experiment with various styles,
+          colors, and components.
+        </p>
+        <a href="#" class="text-blue-500 hover:underline mt-4 block"
+          >Learn more</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
